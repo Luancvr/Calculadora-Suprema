@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/apple-calculator.png" type="image/x-icon"/>
+  <title>Calculadora - Gráfica Suprema</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Calculadora</h1>
+  <form>
+    <label for="material">Material:</label>
+    <select id="material">
+      <option value="placa">Placa</option>
+      <option value="adesivo_recorte">Adesivo com recorte</option>
+      <option value="adesivo">Adesivo</option>
+      <option value="adesivo_instalacao">Adesivo com instalação</option>
+      <option value="adesivo_pvc">Adesivo no PVC</option>
+      <option value="adesivo_pvc_4x4">Adesivo no PVC 4x4</option>
+      <option value="papel">Papel</option>
+      <option value="lona_ilhos">Lona com Ilhós</option>
+      <option value="lona">Lona</option>
+    </select>
+    <br>
+    <label for="tamanho">Largura (cm):</label>
+    <input type="number" placeholder="Largura (cm)" id="largura" required>
+    <br>
+    <label for="largura"> Altura (cm):</label><input type="number" placeholder="Altura (cm)" id="tamanho" required>
+    <br>
+    <label for="quantidade">Unidades:</label>
+    <input type="number" placeholder="Quantidade" id="quantidade">
+    <br>
+    <div><label for="instalacao_outra_cidade">Taxa de Instalação<input type="checkbox" id="instalacao_outra_cidade" name="instalacao_outra_cidade"></label></div>
+
+    <div>
+      <a href="#resultados"><button type="button" onclick="calcular()">Calcular</button></a>
+    </div>
+  </form>
+
+  <h2>Itens do Pedido:</h2>
+  <table class="resultados-table">
+    <tbody id="resultados"></tbody>
+  </table>
+  <p id="total"></p>
+  <script src="script.js"></script>  
+
+  <center><button type="button2" onclick="copyTable()">Copiar</button> <button type="button2" onclick="limparResultados()">Limpar</button></center>
+
+  <script>
+    function copyTable() {
+      const table = document.getElementById('resultados');
+      const range = document.createRange();
+      range.selectNode(table);
+      window.getSelection().addRange(range);
+      document.execCommand('copy');
+      window.getSelection().removeAllRanges();
+      alert('Tabela copiada!');
+    }
+  </script>
+
+</body>
+<footer>Calculadora Gráfica Suprema - Desenvolvida por Luan Ribeiro</footer>
+
+</html>
