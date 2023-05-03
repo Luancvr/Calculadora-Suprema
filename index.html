@@ -46,6 +46,19 @@
   <h2 id="total"></h2>
   
   <script src="script.js"></script>
+  
+  <script>
+     function copyTable() {
+      const table = document.getElementById('resultados');
+      const table = document.getElementById('total');
+      const range = document.createRange();
+      range.selectNode(table);
+      window.getSelection().addRange(range);
+      document.execCommand('copy');
+      window.getSelection().removeAllRanges();
+      alert('Tabela copiada!');
+     }
+  </script>
 
   <center><button type="button2" onclick="copyTable()">Copiar</button> <button type="button2" onclick="limparResultados()">Limpar</button></center>
 
