@@ -165,7 +165,8 @@ form {
 label {
   font-weight: bold;
   margin-right: 10px;
-  text-align: center;
+  text-align: right;
+  width: 30%;
 }
 
 input[type="number"]{
@@ -176,7 +177,7 @@ input[type="number"]{
   border: none;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  width: 185px;
+  width: 50%;
   max-width: 100%;
   background-color: #f9f9f9;
   color:#333;
@@ -190,7 +191,7 @@ select {
   border: none;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  width: 200px;
+  width: 55%;
   max-width: 100%;
   background-color: #f9f9f9;
   color: #333;
