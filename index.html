@@ -41,11 +41,8 @@
 
   <h2>Itens do Pedido:</h2>
   <table class="resultados-table">
-    <tbody id="resultados">
-      <br>
+    <tbody id="resultados"></tbody>
      <h2 id="total"></h2>
-    </tbody>
-   
   </table>
   
   <script src="script.js"></script>  
@@ -53,6 +50,7 @@
     <script>
     function copyTable() {
       const table = document.getElementById('resultados');
+      const table = document.getElementById('total');
       const range = document.createRange();
       range.selectNode(table);
       window.getSelection().addRange(range);
