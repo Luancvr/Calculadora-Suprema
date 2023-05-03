@@ -41,25 +41,11 @@
 
   <h2>Itens do Pedido:</h2>
   <table class="resultados-table">
-    <tbody id="resultados"></tbody></table>
-    <h2 id="total"></h2>
+    <tbody id="resultados"></tbody>
+  </table>
+  <h2 id="total"></h2>
   
-  <script src="script.js"></script>  
-  
-    <script>
-    function copyTable() {
-      const table = document.getElementById('resultados');
-      const table = document.getElementById('total');
-      const range = document.createRange();
-      range.setStart(table);
-      range.setEnd(total);
-      range.selectNode(table);
-      window.getSelection().addRange(range);
-      document.execCommand('copy');
-      window.getSelection().removeAllRanges();
-      alert('Tabela copiada!');
-    }
-  </script>
+  <script src="script.js"></script>
 
   <center><button type="button2" onclick="copyTable()">Copiar</button> <button type="button2" onclick="limparResultados()">Limpar</button></center>
 
