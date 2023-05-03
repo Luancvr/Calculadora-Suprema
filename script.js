@@ -82,3 +82,15 @@ function atualizarProporcao() {
 widthInput.addEventListener("input", atualizarProporcao);
 heightInput.addEventListener("input", atualizarProporcao);
 window.addEventListener("resize", atualizarProporcao);
+
+
+ function copyTable() {
+      const table = document.getElementById('resultados');
+      const table = document.getElementById('total');
+      const range = document.createRange();
+      range.selectNode(table);
+      window.getSelection().addRange(range);
+      document.execCommand('copy');
+      window.getSelection().removeAllRanges();
+      alert('Tabela copiada!');
+    }
