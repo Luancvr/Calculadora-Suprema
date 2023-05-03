@@ -23,6 +23,10 @@ footer {
   margin-bottom: 20px;
   margin-top: 100px;
   color:#0083ff;
+  bottom: 0;
+        position: fixed;
+        width: 90%;
+        text-align: center;
 }
 
 .resultado {
@@ -128,6 +132,15 @@ form {
   
   footer {
   font-size: 10px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  color:#0083ff;
+  bottom: 0;
+        position: fixed;
+        width: 90%;
+        text-align: center;
 }
 
   label,
