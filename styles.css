@@ -48,11 +48,12 @@ footer {
     justify-content: start;
     justify-items: start;
     align-items: stretch;
-    position: absolute;
-    width: 50%;
-    max-width: 100%;
-    margin-left: 180px;
+    position: fixed;
+    width: 100%;
+    max-width: 50%;
+    margin-left: 500px;
     align-content: stretch;
+    float: left;
 }
 
 
