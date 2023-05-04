@@ -50,6 +50,7 @@
   <script src="script.js"></script>
   
   <script>
+    document.getElementById("myTable").addEventListener("load", function() {
      function copyTable() {
       const table = document.getElementById('resultados');
       const range = document.createRange();
@@ -59,6 +60,7 @@
       window.getSelection().removeAllRanges();
       alert('Tabela copiada!');
      }
+      });
   </script>
 
   <center><button type="button2" onclick="copyTable()">Copiar</button> <button type="button2" onclick="limparResultados()">Limpar</button></center>
