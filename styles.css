@@ -260,7 +260,7 @@ button[type="button3"] {
   padding: 8px 20px;
   border-radius: 4px;
   border: none;
-  background-color: #dc3545;
+  background-color: transparent;
   color: white;
   cursor: pointer;
   margin-top: 20px;
