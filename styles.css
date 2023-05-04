@@ -43,6 +43,19 @@ footer {
   margin: 0 auto;
 }
 
+.janelaresultados {
+    display: inline-grid;
+    justify-content: start;
+    justify-items: start;
+    align-items: stretch;
+    position: absolute;
+    width: 50%;
+    max-width: 100%;
+    margin-left: 180px;
+    align-content: stretch;
+}
+
+
 #resultados {
   max-width: 600px;
   margin: 0 auto;
@@ -281,17 +294,4 @@ input[type="checkbox" i] {
     margin: 3px 3px 3px 5px;
     padding: initial;
     border: initial;
-}
-
-
-#janelaresultados {
-    display: inline-grid;
-    justify-content: start;
-    justify-items: start;
-    align-items: stretch;
-    position: absolute;
-    width: 50%;
-    max-width: 100%;
-    margin-left: 180px;
-    align-content: stretch;
 }
