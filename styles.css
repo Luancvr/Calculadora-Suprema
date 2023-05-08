@@ -75,7 +75,7 @@ footer {
 }
 
 .table-wrapper {
-  max-height: 250px; /* altura máxima da tabela */
+  max-height: 220px; /* altura máxima da tabela */
   overflow-y: auto; /* ativa a barra de rolagem vertical */
 }
 
