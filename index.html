@@ -21,17 +21,16 @@
   <script src="script.js"></script>
   
   <script>
-    document.getElementById("resultados").addEventListener("load", function() {
-     function copyTable() {
-      const table = document.getElementById('resultados');
-      const range = document.createRange();
-      range.selectNode(table);
-      window.getSelection().addRange(range);
-      document.execCommand('copy');
-      window.getSelection().removeAllRanges();
-      alert('Tabela copiada!');
-      });
-  </script>
+  function copyTable() {
+    const table = document.getElementById('resultados-tabela');
+    const range = document.createRange();
+    range.selectNode(table);
+    window.getSelection().addRange(range);
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+    alert('Tabela copiada para a área de transferência!');
+  }
+</script>
 
   <center><button type="button2" onclick="copyTable()">Copiar</button> <button type="button3" onclick="limparResultados()">Limpar</button></center>
   </div>
