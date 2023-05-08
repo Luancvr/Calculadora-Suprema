@@ -3,11 +3,11 @@ body {
   padding: 0;
   max-width: 100%;
   overflow-x: hidden;
-  font-family: Poppins, sans-serif;
+  font-family: 'Figtree', system-ui, sans-serif;
   font-size: 16px;
   line-height: 1.4;
   color: #fff;
-  background-color: #020b21;
+  background-color:#071e56;
 }
 
 .container {
@@ -36,13 +36,18 @@ footer {
 }
 
 .container-secundario {
-    width: 100%;
     display: flex;
-    align-items: stretch;
     flex-direction: row-reverse;
     justify-content: space-evenly;
     align-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: ;
+    border: 0px solid #264388;
+    border-radius: 1.6rem;
+    padding: 3.2rem;
+    background: #000e30;
+    box-shadow: 0 30px 60px 0 rgb(0 0 0 / 40%);
+  
+  
 }
 
 .resultado {
