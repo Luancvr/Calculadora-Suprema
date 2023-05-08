@@ -40,7 +40,6 @@ footer {
     flex-direction: row-reverse;
     justify-content: space-evenly;
     align-content: center;
-    flex-wrap: ;
     border: 0px solid #264388;
     border-radius: 1.6rem;
     padding: 3.2rem;
@@ -51,10 +50,10 @@ footer {
 }
 
 .resultado {
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   border-radius: 4px;
   padding-bottom: 10px;
-  padding-top: 10px;
+  padding: 10px;
   margin-bottom: 10px;
   color:#333;
   background-color: #fff;
@@ -62,6 +61,8 @@ footer {
 
 .resultados-table {
     margin-right: 15px;
+    /* display: list-item; */
+    /* list-style: decimal; */
 }
 
 .janelaresultados {
@@ -88,13 +89,15 @@ footer {
 }
 
 #resultados li {
-  display: flex;
+  display: list-item;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: 100%;
+  /* width: 100%; */
   margin-top: 15px;
+  list-style: decimal;
+  text-align: center;
 }
 
 #resultados li:last-child {
