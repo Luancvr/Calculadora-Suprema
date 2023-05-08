@@ -313,3 +313,23 @@ input[type="checkbox" i] {
     padding: initial;
     border: initial;
 }
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #5a688b;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #090e1a;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #5a688b;
+  border-radius: 20px;
+}
