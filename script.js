@@ -37,7 +37,7 @@ function calcular() {
     resultadosElement.innerHTML += `<li>Valor com instalação em outra cidade</li>`;
   }
 
-  resultadosElement.innerHTML += `<li class="resultado">${quantidade} x ${material} (${tamanho}cm x ${largura}cm) - R$ ${valorTotal.toFixed(
+  resultadosElement.innerHTML += `<li class="resultado">${quantidade}x ${material} (${tamanho}cm x ${largura}cm) - R$ ${valorTotal.toFixed(
     2
   )}</li>`;
 
