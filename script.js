@@ -64,21 +64,11 @@ $('.nav a[href^="#"]').on("click", function (e) {
   );
 });
 
-const quadro = document.getElementById("quadro");
-const widthInput = document.getElementById("width");
-const heightInput = document.getElementById("height");
+const deleteButtons = document.querySelectorAll('table button');
+deleteButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const row = button.parentNode.parentNode;
+    row.remove();
+  });
+});
 
-function calcularProporcao() {
-  const width = parseInt(widthInput.value);
-  const height = parseInt(heightInput.value);
-  return height / width;
-}
-
-function atualizarProporcao() {
-  const proporcao = calcularProporcao();
-  quadro.style.height = quadro.offsetWidth * proporcao + "px";
-}
-
-widthInput.addEventListener("input", atualizarProporcao);
-heightInput.addEventListener("input", atualizarProporcao);
-window.addEventListener("resize", atualizarProporcao);
