@@ -34,7 +34,7 @@ function calcular() {
 
   if (instalacaoOutraCidade) {
     valorTotal += 150;
-    resultadosElement.innerHTML += `<li>Valor com instalação em outra cidade</li>`;
+    resultadosElement.innerHTML += `<p>Valor com instalação em outra cidade:<p>`;
   }
 
   resultadosElement.innerHTML += `<li class="resultado">${quantidade}x ${material} (${tamanho}cm x ${largura}cm) - R$ ${valorTotal.toFixed(
