@@ -92,7 +92,7 @@ footer {
   display: list-item;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: right;
   margin: 0 auto;
   /* width: 100%; */
   margin-top: 15px;
@@ -341,4 +341,18 @@ input[type="checkbox" i] {
 *::-webkit-scrollbar-thumb {
   background-color: #5a688b;
   border-radius: 20px;
+}
+
+.btn-remover{
+  margin-left: 2px;
+  padding: 1px;
+  background-color:transparent;
+  color: #bfbfbf;
+  border: 0px #bfbfbf solid;
+}
+
+.btn-remover:hover{
+  margin-left: 2px;
+  color:#c82333;
+  border: 0px solid;
 }
