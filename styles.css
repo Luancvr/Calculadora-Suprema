@@ -356,4 +356,5 @@ input[type="checkbox" i] {
   margin-left: 2px;
   color:#c82333;
   border: 0px solid;
+  transition-duration: 400ms;
 }
