@@ -311,6 +311,7 @@ button[type="button3"] {
 
 button[type="button3"]:hover {
   background-color: #c82333;
+  transition-duration: 400ms;
 }
 
 input[type="checkbox" i] {
