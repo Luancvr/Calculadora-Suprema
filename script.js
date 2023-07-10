@@ -11,7 +11,8 @@ const valores = {
   adesivo_pvc_4x4: 350,
   papel: 25,
   lona_ilhos: 75,
-  lona: 70
+  lona: 70,
+  adesivo_ima: 250
 };
 
 function calcular() {
